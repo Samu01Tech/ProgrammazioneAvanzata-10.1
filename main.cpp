@@ -120,6 +120,7 @@ void ottavoEsercizio(){
         cout << item << " ";
     }
     cout << endl;
+    //per le liste copia in un vector e usa la funzione per questi
 }
 
 int main() {
