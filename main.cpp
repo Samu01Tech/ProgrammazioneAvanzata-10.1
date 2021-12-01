@@ -12,6 +12,10 @@ void stampa(int &dato){
     cout << dato << " ";
 }
 
+int prodotto(int x, int y){
+    return x * y;
+}
+
 void primoEsercizio(){
     vector<int> v = {1, 5, 2, 3, 0};
     
@@ -61,10 +65,15 @@ void quartoEsercizio(){
     cout << distance(v.begin(), trova) << " posizione distante" << endl;
 }
 
+void quintoEsercizio(){
+
+}
+
 int main() {
     vector<int> v = {1, 5, 5, 6, 7};
-    cout << accumulate(v.begin(), v.end(), 0);
-
+    cout << accumulate(v.begin(), v.end(), 0); //somma
+    cout << endl;
+    cout << accumulate(v.begin(), v.end(), 1, prodotto);//prodotto
     //primoEsercizio();
     //secondoEsercizio();
     //terzoEsercizio();
