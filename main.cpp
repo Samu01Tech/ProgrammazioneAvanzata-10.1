@@ -35,21 +35,41 @@ void secondoEsercizio(){
     cout << endl;
 }
 
-int main() {
+void terzoEsercizio(){
     vector<int> v(20);
     iota(v.begin(), v.end(), 0);
     for(auto& item : v){
         cout << item << " ";
     }
     cout << endl;
-    list<int> l(20); //preallocare la lista
+    list<int> l(20);
     iota(l.begin(), l.end(), 0);
     for(auto& item : l){
         cout << item << " ";
     }
     cout << endl;  
+    //copy
     copy(v.begin(), v.end(), ostream_iterator<int>(cout, " "));
+}
+
+void quartoEsercizio(){
+    vector<int> v = {1, 5, 5, 6, 7};
+
+    auto trova = find(v.begin(), v.end(), 5);
+    if(trova != v.end()) cout << *trova << endl;//necessario operatore ==
+    //vector only
+    cout << distance(v.begin(), trova) << " posizione distante" << endl;
+}
+
+int main() {
+    vector<int> v = {1, 5, 5, 6, 7};
+
+    auto trova = find(v.begin(), v.end(), 5);
+    if(trova != v.end()) cout << *trova << endl;//necessario operatore ==
+    //vector only
+    cout << distance(v.begin(), trova) << " posizione distante" << endl;
 
     //primoEsercizio();
     //secondoEsercizio();
+    //terzoEsercizio();
 } 
