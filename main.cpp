@@ -64,12 +64,8 @@ void quartoEsercizio(){
 int main() {
     vector<int> v = {1, 5, 5, 6, 7};
 
-    auto trova = find(v.begin(), v.end(), 5);
-    if(trova != v.end()) cout << *trova << endl;//necessario operatore ==
-    //vector only
-    cout << distance(v.begin(), trova) << " posizione distante" << endl;
-
     //primoEsercizio();
     //secondoEsercizio();
     //terzoEsercizio();
+    //quartoEsercizio();
 } 
