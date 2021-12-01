@@ -4,6 +4,7 @@
 #include <numeric>
 #include <list>
 #include <iterator>
+#include <random>
 using namespace std;
 
 void stampa(int &dato){ 
@@ -97,10 +98,6 @@ void sestoEsercizio(){
 }
 
 void settimoEsercizio(){
-
-}
-
-int main() {
     list<int> l = {0, 5, 1, 9, 4};
     l.sort();
     for(auto& item : l){
@@ -113,6 +110,20 @@ int main() {
         cout << item << " ";
     }
     cout << endl;
+}
+
+void ottavoEsercizio(){
+    vector<int> v = {0, 1, 2, 5, 5, 6};
+    shuffle(v.begin(), v.end(), default_random_engine());
+
+    for(auto& item : v){
+        cout << item << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+
 
     //primoEsercizio();
     //secondoEsercizio();
@@ -121,4 +132,5 @@ int main() {
     //quintoEsercizio();
     //sestoEsercizio();
     //settimoEsercizio();
+    //ottavoEsercizio();
 } 
