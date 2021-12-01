@@ -16,6 +16,14 @@ int prodotto(int x, int y){
     return x * y;
 }
 
+bool compareDesc(const int& a, const int& b){
+    return a > b;
+}
+
+bool compareAsc(const int& a, const int& b){
+    return a < b;
+}
+
 void primoEsercizio(){
     vector<int> v = {1, 5, 2, 3, 0};
     
@@ -88,17 +96,20 @@ void sestoEsercizio(){
     cout << endl;
 }
 
-int main() {
-    vector<int> v = {8, 5, 5, 1, 7};
+void settimoEsercizio(){
 
-    sort(v.begin(), v.end());
-    for (auto& item : v){
+}
+
+int main() {
+    list<int> l = {0, 5, 1, 9, 4};
+    l.sort();
+    for(auto& item : l){
         cout << item << " ";
     }
     cout << endl;
 
-    sort(v.rbegin(), v.rend());
-    for (auto& item : v){
+    l.sort(compareDesc);
+    for(auto& item : l){
         cout << item << " ";
     }
     cout << endl;
@@ -108,4 +119,6 @@ int main() {
     //terzoEsercizio();
     //quartoEsercizio();
     //quintoEsercizio();
+    //sestoEsercizio();
+    //settimoEsercizio();
 } 
