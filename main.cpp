@@ -14,6 +14,6 @@ int main() {
     
     for_each(v.begin(), v.end(), &stampa);
     cout << endl;
-    for_each(v.begin(), v.end(), &stampa);
+    for_each(v.begin(), v.begin()+4, &stampa);// solo con i vector
     return 0;
 } 
