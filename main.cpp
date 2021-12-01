@@ -128,7 +128,7 @@ void ottavoEsercizio(){
 }
 
 void nonoEsercizio(){
-        vector<int> v = {8, 5, 5, 1, 7};
+    vector<int> v = {8, 5, 5, 1, 7};
     list<bool> l(v.size());
     transform(v.begin(), v.end(), l.begin(), oper);
     for(auto& item : l){
@@ -137,10 +137,24 @@ void nonoEsercizio(){
     cout << endl;
 }
 
+void decimoEsercizio(){
+
+}
+
 int main() {
+    vector<int> v = {0, 1, 2, 5, 5, 6};
+    cout << count_if(v.begin(), v.end(), oper) << endl;
 
 
-    //list<int> l = {0, 5, 1, 9, 4};
+    auto finded = find_if(v.begin(), v.end(), oper);
+    cout << *finded << endl;
+
+    v.erase(remove_if (v.begin(), v.end(), oper));
+    for(auto& item : v){
+        cout << item << " ";
+    }
+    cout << endl;
+
 
     //primoEsercizio();
     //secondoEsercizio();
