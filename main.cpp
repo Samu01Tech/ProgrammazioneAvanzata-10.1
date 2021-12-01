@@ -25,6 +25,10 @@ bool compareAsc(const int& a, const int& b){
     return a < b;
 }
 
+bool oper(int dato){
+    return dato % 2 == 0;
+}
+
 void primoEsercizio(){
     vector<int> v = {1, 5, 2, 3, 0};
     
@@ -123,8 +127,20 @@ void ottavoEsercizio(){
     //per le liste copia in un vector e usa la funzione per questi
 }
 
+void nonoEsercizio(){
+        vector<int> v = {8, 5, 5, 1, 7};
+    list<bool> l(v.size());
+    transform(v.begin(), v.end(), l.begin(), oper);
+    for(auto& item : l){
+        cout << item << " ";
+    }
+    cout << endl;
+}
+
 int main() {
 
+
+    //list<int> l = {0, 5, 1, 9, 4};
 
     //primoEsercizio();
     //secondoEsercizio();
@@ -134,4 +150,5 @@ int main() {
     //sestoEsercizio();
     //settimoEsercizio();
     //ottavoEsercizio();
+    //nonoEsercizio();
 } 
