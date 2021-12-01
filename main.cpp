@@ -63,6 +63,7 @@ void quartoEsercizio(){
 
 int main() {
     vector<int> v = {1, 5, 5, 6, 7};
+    cout << accumulate(v.begin(), v.end(), 0);
 
     //primoEsercizio();
     //secondoEsercizio();
