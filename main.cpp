@@ -66,16 +66,46 @@ void quartoEsercizio(){
 }
 
 void quintoEsercizio(){
-
-}
-
-int main() {
     vector<int> v = {1, 5, 5, 6, 7};
     cout << accumulate(v.begin(), v.end(), 0); //somma
     cout << endl;
     cout << accumulate(v.begin(), v.end(), 1, prodotto);//prodotto
+}
+
+void sestoEsercizio(){
+    vector<int> v = {8, 5, 5, 1, 7};
+
+    sort(v.begin(), v.end());
+    for (auto& item : v){
+        cout << item << " ";
+    }
+    cout << endl;
+
+    sort(v.rbegin(), v.rend());
+    for (auto& item : v){
+        cout << item << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    vector<int> v = {8, 5, 5, 1, 7};
+
+    sort(v.begin(), v.end());
+    for (auto& item : v){
+        cout << item << " ";
+    }
+    cout << endl;
+
+    sort(v.rbegin(), v.rend());
+    for (auto& item : v){
+        cout << item << " ";
+    }
+    cout << endl;
+
     //primoEsercizio();
     //secondoEsercizio();
     //terzoEsercizio();
     //quartoEsercizio();
+    //quintoEsercizio();
 } 
