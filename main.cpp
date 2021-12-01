@@ -138,10 +138,6 @@ void nonoEsercizio(){
 }
 
 void decimoEsercizio(){
-
-}
-
-int main() {
     vector<int> v = {0, 1, 2, 5, 5, 6};
     cout << count_if(v.begin(), v.end(), oper) << endl;
 
@@ -154,8 +150,9 @@ int main() {
         cout << item << " ";
     }
     cout << endl;
+}
 
-
+int main() {
     //primoEsercizio();
     //secondoEsercizio();
     //terzoEsercizio();
@@ -165,4 +162,5 @@ int main() {
     //settimoEsercizio();
     //ottavoEsercizio();
     //nonoEsercizio();
+    //decimoEsercizio();
 } 
